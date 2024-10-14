@@ -5,7 +5,9 @@ import { FooterOverlay, Newsletter } from '../../components';
 import { images } from '../../constants';
 import './Footer.css';
 
-const Footer = () => (
+const Footer = () => {
+  const date= new Date().getFullYear();
+  return(
   <div className="app__footer section__padding" id="login">
     <FooterOverlay />
     <Newsletter />
@@ -13,14 +15,14 @@ const Footer = () => (
     <div className="app__footer-links">
       <div className="app__footer-links_contact">
         <h1 className="app__footer-headtext">Contact Us</h1>
-        <p className="p__opensansx">9 W 53rd St, New York, NY 10019, USA</p>
-        <p className="p__opensansx">+1 212-344-1230</p>
-        <p className="p__opensansx">+1 212-555-1230</p>
+        <p className="p__opensansx">9 MG Road, Bengaluru, Karnataka 560001, India</p>
+        <p className="p__opensansx">+91 80 1234 5678</p>
+        <p className="p__opensansx">+91 80 9876 5432</p>
       </div>
 
       <div className="app__footer-links_logo">
-        <img src={images.gericht} alt="footer_logo" />
-        <p className="p__opensans">&quot;The best way to find yourself is to lose yourself in the service of others.&quot;</p>
+        <img src={images.tajroyal} alt="footer_logo" />
+        <p className="p__opensans">&quot;Discover the joy of community through the flavors we serve&quot;</p>
         <img src={images.spoon} className="spoon__img" style={{ marginTop: 15 }} />
         <div className="app__footer-links_icons">
           <FiFacebook />
@@ -39,10 +41,10 @@ const Footer = () => (
     </div>
 
     <div className="footer__copyright">
-      <p className="p__opensansx">2021 Gericht. All Rights reserved.</p>
+      <p className="p__opensansx">{date} Taj Royal. All Rights reserved.</p>
     </div>
 
   </div>
-);
+)};
 
 export default Footer;
