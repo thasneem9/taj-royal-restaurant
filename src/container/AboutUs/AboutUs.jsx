@@ -12,7 +12,7 @@ const AboutUs = () => (
       <div className="aboutus-content_about">
         <h1 className="headtext__cormorant">About Us</h1>
         <img src={images.spoon} className="spoon__img"></img>
-        <p className="p__opensansx">Lorem ipsum dolor sit amet consectetur adipisicing <br></br>elit Architecto quidem, alias maxime vero fugit consequatur.</p>
+        <p className="p__opensansx">Passionate about culinary excellence, <br></br>we bring together the finest ingredients and traditional recipes <br></br>Join us on our journey!.</p>
         <button type="button"  className="custom__button">Know More</button>
       
       </div>
@@ -23,7 +23,7 @@ const AboutUs = () => (
       <div className="aboutus-content_history">
         <h1 className="headtext__cormorant">Our History</h1>
         <img src={images.spoon} className="spoon__img"></img>
-        <p className="p__opensansx">Lorem ipsum dolor sit amet consectetur adipisicing <br></br> elit Architecto quidem, alias maxime vero fugit consequatur.</p>
+        <p className="p__opensansx">Founded in 2005, our restaurant has been a beloved destination<br></br>dedicated to serving dishes that celebrate our rich heritage.</p>
         <button type="button"  className="custom__button">Know More</button>
       
       </div>
