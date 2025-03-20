@@ -1,16 +1,17 @@
-{
+{  "homepage": "https://thasneem9.github.io/taj-royal-restaurant/",
   "name": "taj-royal-restaurant",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://thasneem9.github.io/taj-royal-restaurant/",
+
   "scripts": {
     "dev": "vite",
+     "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
+   
   },
   "dependencies": {
     "react": "^18.3.1",
