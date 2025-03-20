@@ -1,0 +1,143 @@
+.navbar {
+    width:100%;
+    display:flex;
+    border:2px solid black;
+    justify-content:space-between;
+    align-items:center;
+    background-color: black;
+    padding: 1rem 2rem;
+}
+
+.book-btn {
+    background: none;
+    border: none;
+    color: var(--color-white);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .book-btn:hover {
+    color: var(--color-golden);
+  }
+  
+.navbar-logo{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.navbar-logo img{
+    width:200px
+}
+/* NAVBAR ITEMS------- */
+.navbar-links{
+    display:flex;
+    flex:1;
+    justify-content: center;
+    list-style: none;
+   color: white;
+   
+
+}
+.navbar-links li{
+    margin:0 1rem;
+    cursor:pointer;
+}
+.navbar-links li:hover{
+    color:grey;
+}
+/* LOGIN------------------ */
+.navbar-login{
+    color: white;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+
+   
+}
+
+.navbar-login a{
+    margin:0 1rem;
+     transition:0.7s ease;
+    
+
+}
+.navbar-login a:hover {
+    border-bottom:1px solid var(--color-golden)
+}
+.navbar-login div{
+    width:1px;
+    height:30px;
+    background-color: var(--color-grey);
+}
+/* NAVBAR SMALL SCREEN-------------------------- */
+.navbar-smallscreen{
+    display:none;
+}
+.navbar-smallscreen-overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;height:100vh;
+    background:var(--color-black);
+    transition:0.5s ease;
+
+    flex-direction: column;
+    z-index:5;
+
+}
+.navbar-smallscreen-overlay .overlay__close{
+    font-size:27px;
+    color:var(--color-golden);
+    cursor:pointer;
+
+    position:absolute;
+    top:20px;
+    right:20px;
+}
+.navbar-smallscreen-links{
+    list-style:none;
+}
+.navbar-smallscreen-links li{
+   margin:2rem;
+   cursor:pointer;
+   color:var(--color-golden);
+   font-size: 2rem;
+   text-align: center;
+   font-family:var(--font-base)
+
+}
+.navbar-smallscreen-links li:hover{
+    color: var(--color-white)
+}
+@media screen and (min-width:2000px){
+    .navbar-logo img{
+        width:250px;
+    }
+}
+
+@media screen and (max-width:1150px){
+    .navbar-links{
+        display:none;
+    }
+   
+    .navbar-smallscreen{
+        display:flex;
+
+    }
+   
+    
+}
+@media screen and (max-width:650px){
+    .navbar{
+        padding:1rem;
+    }
+    .navbar-login{
+        display:none;
+    }
+    .navbar-logo img{
+        width:180px;
+    }
+    
+    }
