@@ -5,9 +5,11 @@ import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import images from '../../constants/images.js'
 import './Navbar.css'
 import { useState } from 'react';
+import Booking from '../Booking/Booking.jsx';
 
 const Navbar = () => {
   const [toggleMenu,setToggleMenu]=useState(false)
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
   return (
 <nav className='navbar'>
       <div className='navbar-logo'>
@@ -23,9 +25,12 @@ const Navbar = () => {
       </ul>
 
       <div className='navbar-login'>
-        <a href="#login"  className='p__opensans'>Login / Register</a>
+      <a href="#booktable"  className='p__opensans' onClick={() => setIsBookingOpen(true)}>Book Table</a> 
+
        <div/>
-        <a href="#booktable"  className='p__opensans'>Book Table</a>
+       <a href="#login"  className='p__opensans'>Login / Register</a>
+
+     
       </div>
 
       <div  className="navbar-smallscreen">
@@ -44,6 +49,7 @@ const Navbar = () => {
         )}
         
       </div>
+      {isBookingOpen && <Booking closePopup={() => setIsBookingOpen(false)} />}
 
 </nav>
 )

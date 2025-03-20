@@ -7,6 +7,20 @@
     background-color: black;
     padding: 1rem 2rem;
 }
+.book-btn {
+    background: none;
+    border: none;
+    color: var(--color-white);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .book-btn:hover {
+    color: var(--color-golden);
+
+  }
+  
 .navbar-logo{
     display:flex;
     justify-content: flex-start;

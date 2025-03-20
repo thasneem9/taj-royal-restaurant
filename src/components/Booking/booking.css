@@ -14,7 +14,7 @@
   .booking-container {
     background: var(--color-black);
     color: var(--color-white);
-    font-family: var(--font-base);
+  
     padding: 2rem;
     width: 90%;
     max-width: 400px;
